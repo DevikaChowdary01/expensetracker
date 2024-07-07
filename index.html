@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Expense Tracker</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Expense Tracker</h1>
+
+        <!-- Monthly Salary input -->
+        <div>
+            <label for="monthlySalary">Monthly Salary:</label>
+            <input type="number" id="monthlySalary" required>
+        </div>
+
+        <!-- Financial Goals -->
+        <div id="financialGoals">
+            <h2>Financial Goals</h2>
+            <div>
+                <label for="shortTermGoal">Short-Term Goal:</label>
+                <input type="text" id="shortTermGoal">
+            </div>
+            <div>
+                <label for="longTermGoal">Long-Term Goal:</label>
+                <input type="text" id="longTermGoal">
+            </div>
+        </div>
+
+        <!-- Expense Form -->
+        <form id="expenseForm">
+            <label for="expenseDescription">Description:</label>
+            <input type="text" id="expenseDescription" required>
+
+            <label for="expenseAmount">Amount:</label>
+            <input type="number" id="expenseAmount" required>
+
+            <button type="submit">Add Expense</button>
+            <button type="button" id="cancelBtn" style="display: none;">Cancel</button>
+        </form>
+
+        <!-- Expense List -->
+        <div id="expenseList">
+            <!-- Expense items will be added here dynamically -->
+        </div>
+
+        <!-- Total Expense -->
+        <div id="totalExpense">
+            Total Expense: <span id="totalAmount">0.00</span>
+        </div>
+
+        <!-- Remaining Salary and Savings -->
+        <div id="remainingSalary">
+            <div>
+                Remaining Salary: $<span id="remainingAmount">0.00</span>
+            </div>
+            <div>
+                Savings: $<span id="savingsAmount">0.00</span>
+            </div>
+        </div>
+
+        <!-- Investment Suggestions -->
+        <div id="investmentSuggestions">
+            <h2>Investment Suggestions</h2>
+            <div id="suggestionsList">
+                <!-- Investment suggestions will be added here dynamically -->
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
